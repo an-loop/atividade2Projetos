@@ -254,14 +254,12 @@ Complexo **prodEscMatriz(int linhas, int colunas){
 
     // realiza a operação do produto escalar
     for(int i=0; i<linhas; i++){
-        for(int j=0; j<colunas; j++){
-            resultado[i][j].real = 0;
-            resultado[i][j].imag = 0;
+            resultado[i].real = 0;
+            resultado[i].imag = 0;
             for(int k=0; k<colunas; k++){
-                resultado[i][j].real = (matrizprod1[i][k].real * matrizprod2[k][j].real);
-                resultado[i][j].real = (matrizprod1[i][k].real * matrizprod2[k][j].imag);
+                resultado.real += matrizprod1[i].real * matrizprod2[i].real - matrizprod1[i].imag * matrizprod2[i].imag;
+                resultado.imag += matrizprod1[i].real * matrizprod2[i].imag - matrizprod1[i].imag * matrizprod2[i].real;
             }
-        }
     }
 
     // imprime as matrizes matrizprod1, matrizprod2 e o resultado da operação
