@@ -1,20 +1,16 @@
 all:
-		aplicacao teste doc
+		make aplicacao teste
 
-aplicacao:
-		gcc -o teste.o -c teste.c -W -Wall -pedantic
-		gcc -o main.o -c main.c -W -Wall -pedantic
+aplicacao: src/matrizes/matrizes.c src/matrizes/main.c
+		gcc -o build/matrizes.o -c  src/matrizes/matrizes.c -W -Wall -pedantic
+		gcc -o build/main.o -c  src/matrizes/main.c -W -Wall -pedantic          
+		gcc -o build/matrizes src/matrizes/matrizes.c src/matrizes/main.c
 
-matrizes.o: 
-		gcc ./src/matrizes.c -c -o ./obj/matrizes.o
-
-teste:	teste.o matrizes.o
-		gcc ./obj/main.o -o test
+teste:	aplicacao
+		./matrizes
 
 doc: 
-		doxygen Doxyfile
-
+		doxygen doc/Doxyfile
 
 clean: 
-		rm -rf main.o
-		rm -rf matrizes.o
+		rm -f matrizes src/matrizes.o src/main.o

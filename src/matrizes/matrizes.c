@@ -22,7 +22,7 @@ int geraNum(Complexo **matriz, int linhas, int colunas){
             matriz[i][j].imag = rand() % 10;
         }
     }
-    //
+        return 0;
 }
 
 /*Função imprimir 1 operando*/
@@ -35,7 +35,7 @@ int imprime1(Complexo **matriz1, int linhas, int colunas){
         }
     printf("\n");
     }
-    //
+        return 0;
 }
 
 
@@ -49,7 +49,7 @@ int imprime2(Complexo **matriz1, Complexo **matriz2, int linhas, int colunas){
         }
     printf("\n");
     }
-    //
+        return 0;
 
     //imprime na tela a segunda matriz
     printf("\nOperando: B=\n");
@@ -72,9 +72,7 @@ int imprimRes(Complexo **resultado,int linhas,int colunas){
         }
     printf("\n");
     }
-
-    return resultado;
-    //
+        return 0;
 }
 
 /*Função de operação soma*/
@@ -248,15 +246,19 @@ Complexo **prodEscMatriz(int linhas, int colunas){
     //operação do produto escalar
     for(int i=0; i<linhas; i++){
         for(int j=0; j<colunas; j++){
-            resultado[i][j].real += matrizprod1[i][j].real * matrizprod2[i][j].real + matrizprod1[i][j].imag * matrizprod2[i][j].imag;
-            resultado[i][j].imag += matrizprod1[i][j].real * matrizprod2[i][j].imag - matrizprod1[i][j].imag * matrizprod2[i][j].real;
+            resultado[i][j].real = 0;
+            resultado[i][j].imag = 0;
+            for(int k=0; k<colunas; k++){
+                resultado[i][j].real = (matrizprod1[i][k].real * matrizprod2[k][j].real);
+                resultado[i][j].real = (matrizprod1[i][k].real * matrizprod2[k][j].imag);
+            }
         }
     }
 
 
     printf("\n======Teste da operacao produto escalar======\n");
     imprime2(matrizprod1, matrizprod2, linhas, colunas);
-    imprimRes(resultado, linhas, colunas);
+    imprimRes(matrizprod1, linhas, colunas);
 
     return resultado;
 }
@@ -267,7 +269,6 @@ Complexo **prodMatMatriz(int linhas, int colunas){
     //aloca matrizes
     Complexo **matrizmat1 = aloca_matriz(linhas, colunas);
     Complexo **matrizmat2 = aloca_matriz(linhas, colunas);
-    Complexo **resultado = aloca_matriz(linhas, colunas);
     Complexo **cont = aloca_matriz(linhas, colunas);
     int k;
     //gera numeors aleatorios
@@ -291,7 +292,7 @@ Complexo **prodMatMatriz(int linhas, int colunas){
     imprimRes(cont, linhas, colunas);
 
 
-    return resultado;
+    return cont;
 }
 
 
@@ -304,4 +305,6 @@ Complexo **todosMatriz(int linhas, int colunas){
     hermitMatriz(linhas, colunas);
     prodEscMatriz(linhas, colunas);
     prodMatMatriz(linhas, colunas);
+
+    return 0;
 }
