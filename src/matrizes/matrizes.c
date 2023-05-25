@@ -253,13 +253,11 @@ Complexo **prodEscMatriz(int linhas, int colunas){
     geraNum(matrizprod2, linhas, colunas);
 
     // realiza a operação do produto escalar
-    for(int i=0; i<linhas; i++){
             resultado[i].real = 0;
             resultado[i].imag = 0;
-            for(int k=0; k<colunas; k++){
-                resultado.real += matrizprod1[i].real * matrizprod2[i].real - matrizprod1[i].imag * matrizprod2[i].imag;
-                resultado.imag += matrizprod1[i].real * matrizprod2[i].imag - matrizprod1[i].imag * matrizprod2[i].real;
-            }
+    for(int i=0; i<linhas; i++){
+            resultado.real += matrizprod1[i].real * matrizprod2[i].real - matrizprod1[i].imag * matrizprod2[i].imag;
+            resultado.imag += matrizprod1[i].real * matrizprod2[i].imag - matrizprod1[i].imag * matrizprod2[i].real;
     }
 
     // imprime as matrizes matrizprod1, matrizprod2 e o resultado da operação
