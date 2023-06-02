@@ -14,6 +14,5 @@ int main() {
     printf("Adryele Costa, 202206840035");
 
     todosMatriz(linhas, colunas);
-
     return 0;
 }

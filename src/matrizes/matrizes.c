@@ -237,32 +237,31 @@ Complexo **hermitMatriz(int linhas, int colunas){
     }
 
     // Retorna a matriz resultado
-     return resultado;
+    return resultado;
 }
 
 
-/*Função de operação produto escalar*/
-Complexo **prodEscMatriz(int linhas, int colunas){
+Complexo **prodEscMatriz(int linhas,int colunas){
     //aloca as matrizes matrizprod1, matrizprod2 (matrizes de entrada) e resultado (matriz resultante)
-    Complexo **matrizprod1 = aloca_matriz(linhas, colunas);
-    Complexo **matrizprod1 = aloca_matriz(linhas, colunas);
-    Complexo **matrizprod2 = aloca_matriz(linhas, colunas);
+    Complexo **matriz1 = aloca_matriz(linhas, colunas);
+    Complexo **matriz2 = aloca_matriz(linhas, colunas);
     Complexo **resultado = aloca_matriz(linhas, colunas);
     //gera numeros aleatorios  para as matrizes matrizprod1 e matrizprod2
-    geraNum(matrizprod1, linhas, colunas);
-    geraNum(matrizprod2, linhas, colunas);
+    geraNum(matriz1, linhas, colunas);
+    geraNum(matriz2, linhas, colunas);
 
     // realiza a operação do produto escalar
-            resultado[i].real = 0;
-            resultado[i].imag = 0;
-    for(int i=0; i<linhas; i++){
-            resultado.real += matrizprod1[i].real * matrizprod2[i].real - matrizprod1[i].imag * matrizprod2[i].imag;
-            resultado.imag += matrizprod1[i].real * matrizprod2[i].imag - matrizprod1[i].imag * matrizprod2[i].real;
+    for (int i = 0; i < linhas; i++) {
+        for(int j=0; j< colunas; j++){
+            resultado[i][j].real = matriz1[i][j].real * matriz2[i][j].real - matriz1[i][j].imag * matriz2[i][j].imag;
+            resultado[i][j].imag = matriz1[i][j].real * matriz2[i][j].imag - matriz1[i][j].imag * matriz2[i][j].real;
+        }
     }
+
 
     // imprime as matrizes matrizprod1, matrizprod2 e o resultado da operação
     printf("\n======Teste da operacao produto escalar======\n");
-    imprime2(matrizprod1, matrizprod2, linhas, colunas);
+    imprime2(matriz1, matriz2, linhas, colunas);
     imprimRes(resultado, linhas, colunas);
 
     // retorna o resultado da operação
@@ -275,7 +274,6 @@ Complexo **prodMatMatriz(int linhas, int colunas){
     //aloca matrizes matrizmat1, matrizmat2 (matrizes de entrada), resultado (matriz resultante) e cont (matriz auxiliar para cálculos intermediários)
     Complexo **matrizmat1 = aloca_matriz(linhas, colunas);
     Complexo **matrizmat2 = aloca_matriz(linhas, colunas);
-    Complexo **resultado = aloca_matriz(linhas, colunas);
     Complexo **cont = aloca_matriz(linhas, colunas);
     int k;
     //gera numeors aleatorios  para as matrizes matrizmat1 e matrizmat2
