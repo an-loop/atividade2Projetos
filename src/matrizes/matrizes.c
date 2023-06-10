@@ -397,7 +397,7 @@ void teste_calc_svd(){
 
 
 /*Função teste todos*/
-Complexo **todosMatriz(int linhas, int colunas){
+void todosMatriz(){
      // Chamando as funções de teste para cada operação
     somaMatriz(3, 3);
     subtraMatriz(3, 3);

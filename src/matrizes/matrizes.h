@@ -20,7 +20,6 @@ Complexo **conjugMatriz(int linhas, int colunas);
 Complexo **hermitMatriz(int linhas, int colunas);
 Complexo **prodEscMatriz(int linhas, int colunas);
 Complexo **prodMatMatriz(int linhas, int colunas);
-Complexo **todosMatriz(int linhas, int colunas);
 
 void todosMatriz();
 void calc_svd(Complexo **matriz, int linhas, int colunas);
