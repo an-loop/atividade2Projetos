@@ -12,6 +12,7 @@ int main() {
     printf("Livia Hipolito, 202206840043\n");
     printf("Adryele Costa, 202206840035");
 
-    todosMatriz(linhas, colunas);
+    todosMatriz();
     return 0;
 }
+

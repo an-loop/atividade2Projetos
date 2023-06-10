@@ -21,6 +21,8 @@ Complexo **hermitMatriz(int linhas, int colunas);
 Complexo **prodEscMatriz(int linhas, int colunas);
 Complexo **prodMatMatriz(int linhas, int colunas);
 Complexo **todosMatriz(int linhas, int colunas);
-void calc_svd(Complexo **matriz, int linhas, int colunas);
 
+void todosMatriz();
+void calc_svd(Complexo **matriz, int linhas, int colunas);
+void teste_calc_svd();
 #endif // MATRIZES_H_INCLUDED

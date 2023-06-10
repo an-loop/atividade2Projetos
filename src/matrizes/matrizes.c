@@ -362,16 +362,51 @@ void calc_svd(Complexo **matriz, int linhas, int colunas){
 
 }
 
+void teste_calc_svd(){
+    Complexo **matrizR;
+    int linhas[4] = {3, 4, 6, 6};
+    int colunas[4] = {2, 4, 5 , 5}; 
+    int i, j, t;
+
+    printf("\n======Teste da operacao SVD======\n");
+
+    Complexo **matrizC = aloca_matriz(3, 3);
+    geraNum(matrizC, 3, 3);
+    calc_svd(matrizC, 3, 3);
+
+
+    for(t=0; t<4; t++){
+        linhas[t];
+        colunas[t];
+
+    matrizR = aloca_matriz(linhas[t], colunas[t]);
+    for(int i=0; i <linhas[t]; i++){
+        for(int j=0; j<colunas[t]; j++){
+            matrizR[i][j].real = rand() % 10; // Atribui um valor aleatorio entre 0 e 9 para a parte real
+            matrizR[i][j].imag = 0;
+        }
+    }
+    
+    calc_svd(matrizR, linhas[t], colunas[t]);
+
+    }
+
+
+}
+
+
+
 /*Função teste todos*/
 Complexo **todosMatriz(int linhas, int colunas){
      // Chamando as funções de teste para cada operação
-    somaMatriz(linhas, colunas);
-    subtraMatriz(linhas, colunas);
-    transpostaMatriz(linhas, colunas);
-    conjugMatriz(linhas, colunas);
-    hermitMatriz(linhas, colunas);
-    prodEscMatriz(linhas, colunas);
-    prodMatMatriz(linhas, colunas);
+    somaMatriz(3, 3);
+    subtraMatriz(3, 3);
+    transpostaMatriz(3, 3);
+    conjugMatriz(3, 3);
+    hermitMatriz(3, 3);
+    prodEscMatriz(3, 3);
+    prodMatMatriz(3, 3);
+    teste_calc_svd();
+
     
-    return 0;
 }
