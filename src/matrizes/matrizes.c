@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <gsl/gsl_linalg.h>
 #include "matrizes.h"
 
 /*Função de alocação dinâmica*/
@@ -300,6 +301,66 @@ Complexo **prodMatMatriz(int linhas, int colunas){
     return cont;
 }
 
+void calc_svd(Complexo **matriz, int linhas, int colunas){
+    int i,j;
+    gsl_matrix * A = gsl_matrix_alloc(linhas, colunas);
+    gsl_matrix * V = gsl_matrix_alloc(colunas, colunas);
+    gsl_vector * S = gsl_vector_alloc(colunas);
+    gsl_vector * work = gsl_vector_alloc(colunas);
+
+    //checando matriz complexa
+    for(i=0; i<linhas; i++){
+        for(j=0; j<colunas; j++){
+            if(matriz[i][j].imag != 0){
+                printf("\n");
+                imprime1(matriz, linhas, colunas);
+                printf("\n\nALerta: Essa matrix é complexa. Será realizado o cálculo utilizando apenas a parte Real da matriz!\n\n");
+            } else{
+                printf("\n\nEssa matriz é real!\n\n");
+            }
+            break;
+        }
+        break;
+    }
+
+    //imprime parte real da matriz
+    printf("Matriz %dx%d\n", linhas, colunas);
+    for(i=0; i<linhas; i++){
+        for(j=0; j<colunas; j++){
+            gsl_matrix_set(A, i, j, matriz[i][j].real);
+            printf("| %f |", gsl_matrix_get(A, i, j));
+        }
+        printf("\n");
+    }
+
+    //realiza o calculo SVD
+    gsl_linalg_SV_decomp(A, V, S, work);
+
+    //imprime matriz V
+    printf("\n\nMatriz V\n");
+    for(i=0; i<colunas; i++){
+        for(j=0; j<colunas; j++){
+            printf("| %f |", gsl_matrix_get(V, i, j));
+        }
+    printf("\n");
+    }
+
+    //imprime vetor U
+    printf("\n\nMatriz U\n");
+    for(i=0; i<linhas; i++){
+        for(j=0; j<colunas; j++){
+            printf("| %f |", gsl_matrix_get(A, i, j));
+        }
+    printf("\n");
+    }
+
+    //imprime vetor S
+    printf("\n\nVetor S\n");
+    for(i=0; i<colunas; i++)
+        printf("| %f |", gsl_vector_get(S, i));
+    printf("\n\n");
+
+}
 
 /*Função teste todos*/
 Complexo **todosMatriz(int linhas, int colunas){

@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include "matrizes.h"
+#include "matrizes.c"
 
 
 
 int main() {
-
-    int linhas = 3, colunas = 3;
 
     printf("Alunos: \n");
     printf("Amanda Gabrielly, 202207040043\n");
