@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "matrizes.h"
-#include "matrizes.c"
 
 
 
