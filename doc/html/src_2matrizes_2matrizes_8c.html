@@ -1,0 +1,1055 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.7"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projeto de Engenharia 2: Referência ao ficheiro src/matrizes/matrizes.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Projeto de Engenharia 2
+   </div>
+   <div id="projectbrief">Compilação e geração de documentação automática</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.7 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhuma entrada encontrada</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_a836d43c960440afd24561ddfc2947e0.html">matrizes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funções</a>  </div>
+  <div class="headertitle"><div class="title">Referência ao ficheiro matrizes.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;gsl/gsl_linalg.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="src_2matrizes_2matrizes_8h_source.html">matrizes.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Diagrama de dependências de inclusão para matrizes.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="src_2matrizes_2matrizes_8c__incl.png" border="0" usemap="#asrc_2matrizes_2matrizes_8c" alt=""/></div>
+</div>
+</div>
+<p><a href="src_2matrizes_2matrizes_8c_source.html">Ir para o código fonte deste ficheiro.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funções</h2></td></tr>
+<tr class="memitem:a7d042a66e70fa29560c9debf9d8ef24c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a> (int linhas, int colunas)</td></tr>
+<tr class="separator:a7d042a66e70fa29560c9debf9d8ef24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a715704d5368128e5cf5f07c33bbc6a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a> (<a class="el" href="structComplexo.html">Complexo</a> **matriz, int linhas, int colunas)</td></tr>
+<tr class="separator:a6a715704d5368128e5cf5f07c33bbc6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e9e8a7369d6622f81ee22b5d79d750f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1</a> (<a class="el" href="structComplexo.html">Complexo</a> **matriz1, int linhas, int colunas)</td></tr>
+<tr class="separator:a2e9e8a7369d6622f81ee22b5d79d750f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a3312ef51d55483d7ed76ec147a66ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a4a3312ef51d55483d7ed76ec147a66ba">imprime2</a> (<a class="el" href="structComplexo.html">Complexo</a> **matriz1, <a class="el" href="structComplexo.html">Complexo</a> **matriz2, int linhas, int colunas)</td></tr>
+<tr class="separator:a4a3312ef51d55483d7ed76ec147a66ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae555b84bdcf98cce93078acdc02bd81f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes</a> (<a class="el" href="structComplexo.html">Complexo</a> **resultado, int linhas, int colunas)</td></tr>
+<tr class="separator:ae555b84bdcf98cce93078acdc02bd81f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eaa392087c545f0d2e0287feaac4798"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a1eaa392087c545f0d2e0287feaac4798">somaMatriz</a> (int linhas, int colunas)</td></tr>
+<tr class="separator:a1eaa392087c545f0d2e0287feaac4798"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a084a5f0693f338554ce826aa5a2dd30a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a084a5f0693f338554ce826aa5a2dd30a">subtraMatriz</a> (int linhas, int colunas)</td></tr>
+<tr class="separator:a084a5f0693f338554ce826aa5a2dd30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a834ad3f00029aeeb766351601f6aea7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a834ad3f00029aeeb766351601f6aea7c">transpostaMatriz</a> (int linhas, int colunas)</td></tr>
+<tr class="separator:a834ad3f00029aeeb766351601f6aea7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbe9e9a28a7a9badf1dfbe3e45106079"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#abbe9e9a28a7a9badf1dfbe3e45106079">conjugMatriz</a> (int linhas, int colunas)</td></tr>
+<tr class="separator:abbe9e9a28a7a9badf1dfbe3e45106079"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a429157a7c2328638fa85930f74e97005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a429157a7c2328638fa85930f74e97005">hermitMatriz</a> (int linhas, int colunas)</td></tr>
+<tr class="separator:a429157a7c2328638fa85930f74e97005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4801e8768419be3971d4c1b9037e14cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a4801e8768419be3971d4c1b9037e14cc">prodEscMatriz</a> (int linhas, int colunas)</td></tr>
+<tr class="separator:a4801e8768419be3971d4c1b9037e14cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a318bb2ecc463d5374912da8625068da5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a318bb2ecc463d5374912da8625068da5">prodMatMatriz</a> (int linhas, int colunas)</td></tr>
+<tr class="separator:a318bb2ecc463d5374912da8625068da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ea2aeb1f01cc416a62ca9f22ed8ba74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a1ea2aeb1f01cc416a62ca9f22ed8ba74">calc_svd</a> (<a class="el" href="structComplexo.html">Complexo</a> **matriz, int linhas, int colunas)</td></tr>
+<tr class="separator:a1ea2aeb1f01cc416a62ca9f22ed8ba74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae220ed44122cad3aa4637358f423bb93"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#ae220ed44122cad3aa4637358f423bb93">teste_calc_svd</a> ()</td></tr>
+<tr class="separator:ae220ed44122cad3aa4637358f423bb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3715ef11e552343d910a10a499c10982"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="src_2matrizes_2matrizes_8c.html#a3715ef11e552343d910a10a499c10982">todosMatriz</a> ()</td></tr>
+<tr class="separator:a3715ef11e552343d910a10a499c10982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentação das funções</h2>
+<a id="a7d042a66e70fa29560c9debf9d8ef24c" name="a7d042a66e70fa29560c9debf9d8ef24c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d042a66e70fa29560c9debf9d8ef24c">&#9670;&#160;</a></span>aloca_matriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structComplexo.html">Complexo</a> ** aloca_matriz </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00007">7</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    7</span>                                                 {</div>
+<div class="line"><span class="lineno">    8</span>     <span class="comment">// Aloca memoria para o vetor de ponteiros &#39;matriz&#39;</span></div>
+<div class="line"><span class="lineno">    9</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matriz = malloc(linhas* <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structComplexo.html">Complexo</a>*));  <span class="comment">// Cada elemento do vetor &#39;matriz&#39; será um ponteiro para uma linha da matriz</span></div>
+<div class="line"><span class="lineno">   10</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; linhas; i++) {</div>
+<div class="line"><span class="lineno">   11</span>        matriz[i] = malloc(colunas* <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structComplexo.html">Complexo</a>)); <span class="comment">// Para cada linha, aloca memoria para um vetor de &#39;colunas&#39; elementos do tipo Complexo</span></div>
+<div class="line"><span class="lineno">   12</span>    }</div>
+<div class="line"><span class="lineno">   13</span> </div>
+<div class="line"><span class="lineno">   14</span>    <span class="comment">// Retorna o ponteiro para a matriz alocada</span></div>
+<div class="line"><span class="lineno">   15</span>    <span class="keywordflow">return</span> matriz;</div>
+<div class="line"><span class="lineno">   16</span>}</div>
+<div class="ttc" id="astructComplexo_html"><div class="ttname"><a href="structComplexo.html">Complexo</a></div><div class="ttdef"><b>Definição</b> <a href="matrizes_8h_source.html#l00004">matrizes.h:4</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a1ea2aeb1f01cc416a62ca9f22ed8ba74" name="a1ea2aeb1f01cc416a62ca9f22ed8ba74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ea2aeb1f01cc416a62ca9f22ed8ba74">&#9670;&#160;</a></span>calc_svd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void calc_svd </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td>
+          <td class="paramname"><em>matriz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00304">304</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  304</span>                                                         {</div>
+<div class="line"><span class="lineno">  305</span>    <span class="keywordtype">int</span> i,j;</div>
+<div class="line"><span class="lineno">  306</span>    gsl_matrix * A = gsl_matrix_alloc(linhas, colunas);</div>
+<div class="line"><span class="lineno">  307</span>    gsl_matrix * V = gsl_matrix_alloc(colunas, colunas);</div>
+<div class="line"><span class="lineno">  308</span>    gsl_vector * S = gsl_vector_alloc(colunas);</div>
+<div class="line"><span class="lineno">  309</span>    gsl_vector * work = gsl_vector_alloc(colunas);</div>
+<div class="line"><span class="lineno">  310</span> </div>
+<div class="line"><span class="lineno">  311</span>    <span class="comment">//checando matriz complexa</span></div>
+<div class="line"><span class="lineno">  312</span>    <span class="keywordflow">for</span>(i=0; i&lt;linhas; i++){</div>
+<div class="line"><span class="lineno">  313</span>        <span class="keywordflow">for</span>(j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">  314</span>            <span class="keywordflow">if</span>(matriz[i][j].imag != 0){</div>
+<div class="line"><span class="lineno">  315</span>                printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  316</span>                <a class="code hl_function" href="matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1</a>(matriz, linhas, colunas);</div>
+<div class="line"><span class="lineno">  317</span>                printf(<span class="stringliteral">&quot;\n\nALerta: Essa matrix é complexa. Será realizado o cálculo utilizando apenas a parte Real da matriz!\n\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  318</span>            } <span class="keywordflow">else</span>{</div>
+<div class="line"><span class="lineno">  319</span>                printf(<span class="stringliteral">&quot;\n\nEssa matriz é real!\n\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  320</span>            }</div>
+<div class="line"><span class="lineno">  321</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  322</span>        }</div>
+<div class="line"><span class="lineno">  323</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  324</span>    }</div>
+<div class="line"><span class="lineno">  325</span> </div>
+<div class="line"><span class="lineno">  326</span>    <span class="comment">//imprime parte real da matriz</span></div>
+<div class="line"><span class="lineno">  327</span>    printf(<span class="stringliteral">&quot;Matriz %dx%d\n&quot;</span>, linhas, colunas);</div>
+<div class="line"><span class="lineno">  328</span>    <span class="keywordflow">for</span>(i=0; i&lt;linhas; i++){</div>
+<div class="line"><span class="lineno">  329</span>        <span class="keywordflow">for</span>(j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">  330</span>            gsl_matrix_set(A, i, j, matriz[i][j].real);</div>
+<div class="line"><span class="lineno">  331</span>            printf(<span class="stringliteral">&quot;| %f |&quot;</span>, gsl_matrix_get(A, i, j));</div>
+<div class="line"><span class="lineno">  332</span>        }</div>
+<div class="line"><span class="lineno">  333</span>        printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  334</span>    }</div>
+<div class="line"><span class="lineno">  335</span> </div>
+<div class="line"><span class="lineno">  336</span>    <span class="comment">//realiza o calculo SVD</span></div>
+<div class="line"><span class="lineno">  337</span>    gsl_linalg_SV_decomp(A, V, S, work);</div>
+<div class="line"><span class="lineno">  338</span> </div>
+<div class="line"><span class="lineno">  339</span>    <span class="comment">//imprime matriz V</span></div>
+<div class="line"><span class="lineno">  340</span>    printf(<span class="stringliteral">&quot;\n\nMatriz V\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  341</span>    <span class="keywordflow">for</span>(i=0; i&lt;colunas; i++){</div>
+<div class="line"><span class="lineno">  342</span>        <span class="keywordflow">for</span>(j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">  343</span>            printf(<span class="stringliteral">&quot;| %f |&quot;</span>, gsl_matrix_get(V, i, j));</div>
+<div class="line"><span class="lineno">  344</span>        }</div>
+<div class="line"><span class="lineno">  345</span>    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  346</span>    }</div>
+<div class="line"><span class="lineno">  347</span> </div>
+<div class="line"><span class="lineno">  348</span>    <span class="comment">//imprime vetor U</span></div>
+<div class="line"><span class="lineno">  349</span>    printf(<span class="stringliteral">&quot;\n\nMatriz U\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  350</span>    <span class="keywordflow">for</span>(i=0; i&lt;linhas; i++){</div>
+<div class="line"><span class="lineno">  351</span>        <span class="keywordflow">for</span>(j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">  352</span>            printf(<span class="stringliteral">&quot;| %f |&quot;</span>, gsl_matrix_get(A, i, j));</div>
+<div class="line"><span class="lineno">  353</span>        }</div>
+<div class="line"><span class="lineno">  354</span>    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  355</span>    }</div>
+<div class="line"><span class="lineno">  356</span> </div>
+<div class="line"><span class="lineno">  357</span>    <span class="comment">//imprime vetor S</span></div>
+<div class="line"><span class="lineno">  358</span>    printf(<span class="stringliteral">&quot;\n\nVetor S\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  359</span>    <span class="keywordflow">for</span>(i=0; i&lt;colunas; i++)</div>
+<div class="line"><span class="lineno">  360</span>        printf(<span class="stringliteral">&quot;| %f |&quot;</span>, gsl_vector_get(S, i));</div>
+<div class="line"><span class="lineno">  361</span>    printf(<span class="stringliteral">&quot;\n\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  362</span> </div>
+<div class="line"><span class="lineno">  363</span>}</div>
+<div class="ttc" id="amatrizes_8c_html_a2e9e8a7369d6622f81ee22b5d79d750f"><div class="ttname"><a href="matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1</a></div><div class="ttdeci">int imprime1(Complexo **matriz1, int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00033">matrizes.c:33</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Referências <a class="el" href="matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="src_2matrizes_2matrizes_8c_a1ea2aeb1f01cc416a62ca9f22ed8ba74_cgraph.png" border="0" usemap="#asrc_2matrizes_2matrizes_8c_a1ea2aeb1f01cc416a62ca9f22ed8ba74_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="abbe9e9a28a7a9badf1dfbe3e45106079" name="abbe9e9a28a7a9badf1dfbe3e45106079"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbe9e9a28a7a9badf1dfbe3e45106079">&#9670;&#160;</a></span>conjugMatriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structComplexo.html">Complexo</a> ** conjugMatriz </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00169">169</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  169</span>                                                {</div>
+<div class="line"><span class="lineno">  170</span>    <span class="comment">//aloca matrizes matrizconj (matriz original) e resultado (matriz conjugada)</span></div>
+<div class="line"><span class="lineno">  171</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matrizconj = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  172</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **resultado = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  173</span>    <span class="comment">//gera numeros aleatorios para a matriz matrizconj</span></div>
+<div class="line"><span class="lineno">  174</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matrizconj, linhas, colunas);</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    <span class="comment">// realiza a operação da matriz conjugada</span></div>
+<div class="line"><span class="lineno">  177</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;linhas; i++){</div>
+<div class="line"><span class="lineno">  178</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">  179</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>= matrizconj[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>;</div>
+<div class="line"><span class="lineno">  180</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>= -matrizconj[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>;</div>
+<div class="line"><span class="lineno">  181</span>        }</div>
+<div class="line"><span class="lineno">  182</span>    }</div>
+<div class="line"><span class="lineno">  183</span>    <span class="comment">//Imprime a matriz matrizconj e o resultado da operação</span></div>
+<div class="line"><span class="lineno">  184</span> </div>
+<div class="line"><span class="lineno">  185</span>    printf(<span class="stringliteral">&quot;\n======Teste da operacao conjugada======\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  186</span>    <a class="code hl_function" href="matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1</a>(matrizconj, linhas, colunas);</div>
+<div class="line"><span class="lineno">  187</span>    <a class="code hl_function" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes</a>(resultado, linhas, colunas);</div>
+<div class="line"><span class="lineno">  188</span> </div>
+<div class="line"><span class="lineno">  189</span> <span class="comment">// Retorna o resultado da operação</span></div>
+<div class="line"><span class="lineno">  190</span>    <span class="keywordflow">return</span> resultado;</div>
+<div class="line"><span class="lineno">  191</span>}</div>
+<div class="ttc" id="amatrizes_8c_html_a6a715704d5368128e5cf5f07c33bbc6a"><div class="ttname"><a href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a></div><div class="ttdeci">int geraNum(Complexo **matriz, int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00021">matrizes.c:21</a></div></div>
+<div class="ttc" id="amatrizes_8c_html_a7d042a66e70fa29560c9debf9d8ef24c"><div class="ttname"><a href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a></div><div class="ttdeci">Complexo ** aloca_matriz(int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00007">matrizes.c:7</a></div></div>
+<div class="ttc" id="amatrizes_8c_html_ae555b84bdcf98cce93078acdc02bd81f"><div class="ttname"><a href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes</a></div><div class="ttdeci">int imprimRes(Complexo **resultado, int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00071">matrizes.c:71</a></div></div>
+<div class="ttc" id="astructComplexo_html_a192d2ceb915564a5e2a6e3bff72c76d1"><div class="ttname"><a href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">Complexo::real</a></div><div class="ttdeci">int real</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8h_source.html#l00005">matrizes.h:5</a></div></div>
+<div class="ttc" id="astructComplexo_html_aed60059128ed4b6eb2b1e181a43459f1"><div class="ttname"><a href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">Complexo::imag</a></div><div class="ttdeci">int imag</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8h_source.html#l00006">matrizes.h:6</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Referências <a class="el" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz()</a>, <a class="el" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum()</a>, <a class="el" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">Complexo::imag</a>, <a class="el" href="matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1()</a>, <a class="el" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes()</a> e <a class="el" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">Complexo::real</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="src_2matrizes_2matrizes_8c_abbe9e9a28a7a9badf1dfbe3e45106079_cgraph.png" border="0" usemap="#asrc_2matrizes_2matrizes_8c_abbe9e9a28a7a9badf1dfbe3e45106079_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a6a715704d5368128e5cf5f07c33bbc6a" name="a6a715704d5368128e5cf5f07c33bbc6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a715704d5368128e5cf5f07c33bbc6a">&#9670;&#160;</a></span>geraNum()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int geraNum </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td>
+          <td class="paramname"><em>matriz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00021">21</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   21</span>                                                       {</div>
+<div class="line"><span class="lineno">   22</span>    <span class="comment">//gera numero aleatorio  para preencher a matriz</span></div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i &lt;linhas; i++){</div>
+<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">   25</span>            matriz[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a> = rand() % 10; <span class="comment">// Atribui um valor aleatorio entre 0 e 9 para a parte real</span></div>
+<div class="line"><span class="lineno">   26</span>            matriz[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a> = rand() % 10; <span class="comment">// Atribui um valor aleatorio entre 0 e 9 para a parte imaginaria</span></div>
+<div class="line"><span class="lineno">   27</span>        }</div>
+<div class="line"><span class="lineno">   28</span>    }</div>
+<div class="line"><span class="lineno">   29</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   30</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referências <a class="el" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">Complexo::imag</a> e <a class="el" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">Complexo::real</a>.</p>
+
+</div>
+</div>
+<a id="a429157a7c2328638fa85930f74e97005" name="a429157a7c2328638fa85930f74e97005"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a429157a7c2328638fa85930f74e97005">&#9670;&#160;</a></span>hermitMatriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structComplexo.html">Complexo</a> ** hermitMatriz </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00195">195</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  195</span>                                                {</div>
+<div class="line"><span class="lineno">  196</span>    <span class="comment">// aloca as matrizes matrizhermit (matriz original), matriz (matriz transposta) e resultado (matriz conjugada)</span></div>
+<div class="line"><span class="lineno">  197</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matrizhermit = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  198</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matriz = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  199</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **resultado = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  200</span>    <span class="comment">//gera numeros aleatorios para a matriz matrizhermit</span></div>
+<div class="line"><span class="lineno">  201</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matrizhermit, linhas, colunas);</div>
+<div class="line"><span class="lineno">  202</span> </div>
+<div class="line"><span class="lineno">  203</span>    <span class="comment">// realiza a operação da matriz transposta</span></div>
+<div class="line"><span class="lineno">  204</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;linhas; i++){</div>
+<div class="line"><span class="lineno">  205</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">  206</span>            matriz[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>= matrizhermit[j][i].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>;</div>
+<div class="line"><span class="lineno">  207</span>            matriz[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>= matrizhermit[j][i].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>;</div>
+<div class="line"><span class="lineno">  208</span>        }</div>
+<div class="line"><span class="lineno">  209</span>    }</div>
+<div class="line"><span class="lineno">  210</span>    <span class="comment">// realiza a operação da matriz conjugada</span></div>
+<div class="line"><span class="lineno">  211</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;linhas; i++){</div>
+<div class="line"><span class="lineno">  212</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">  213</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>= matriz[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>;</div>
+<div class="line"><span class="lineno">  214</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>= -matriz[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>;</div>
+<div class="line"><span class="lineno">  215</span>        }</div>
+<div class="line"><span class="lineno">  216</span>    }</div>
+<div class="line"><span class="lineno">  217</span>    <span class="comment">// imprime a matriz matrizhermit, a matriz transposta e a matriz conjugada</span></div>
+<div class="line"><span class="lineno">  218</span>    <span class="comment">//Operação Hermitiana</span></div>
+<div class="line"><span class="lineno">  219</span>    printf(<span class="stringliteral">&quot;\n======Teste da operacao hermitiana======\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  220</span>    <span class="comment">//imprime matriz hermitiana</span></div>
+<div class="line"><span class="lineno">  221</span>    <a class="code hl_function" href="matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1</a>(matrizhermit, linhas, colunas);</div>
+<div class="line"><span class="lineno">  222</span>    printf(<span class="stringliteral">&quot;\nTransposta: \n&quot;</span>);</div>
+<div class="line"><span class="lineno">  223</span>    <a class="code hl_function" href="matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1</a>(matriz, linhas, colunas);</div>
+<div class="line"><span class="lineno">  224</span>    printf(<span class="stringliteral">&quot;\nConjugada: &quot;</span>);</div>
+<div class="line"><span class="lineno">  225</span>    <a class="code hl_function" href="matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1</a>(resultado, linhas, colunas);</div>
+<div class="line"><span class="lineno">  226</span> </div>
+<div class="line"><span class="lineno">  227</span>    <span class="comment">// Verifica se a matriz e hermitiana comparando a matriz original e a matriz conjugada</span></div>
+<div class="line"><span class="lineno">  228</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;linhas; i++){</div>
+<div class="line"><span class="lineno">  229</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">  230</span>            <span class="keywordflow">if</span>(matrizhermit[i][j].real == resultado[i][j].real &amp;&amp; matrizhermit[i][j].imag == resultado[i][j].imag){</div>
+<div class="line"><span class="lineno">  231</span>                printf(<span class="stringliteral">&quot;\nMatriz e Hermitiana\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  232</span>                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  233</span>            } <span class="keywordflow">else</span>{</div>
+<div class="line"><span class="lineno">  234</span>                printf(<span class="stringliteral">&quot;\nMatriz nao e Hermitiana\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  235</span>                <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  236</span>            }</div>
+<div class="line"><span class="lineno">  237</span>        }</div>
+<div class="line"><span class="lineno">  238</span>    }</div>
+<div class="line"><span class="lineno">  239</span> </div>
+<div class="line"><span class="lineno">  240</span>    <span class="comment">// Retorna a matriz resultado</span></div>
+<div class="line"><span class="lineno">  241</span>    <span class="keywordflow">return</span> resultado;</div>
+<div class="line"><span class="lineno">  242</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referências <a class="el" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz()</a>, <a class="el" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum()</a>, <a class="el" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">Complexo::imag</a>, <a class="el" href="matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1()</a> e <a class="el" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">Complexo::real</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="src_2matrizes_2matrizes_8c_a429157a7c2328638fa85930f74e97005_cgraph.png" border="0" usemap="#asrc_2matrizes_2matrizes_8c_a429157a7c2328638fa85930f74e97005_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a2e9e8a7369d6622f81ee22b5d79d750f" name="a2e9e8a7369d6622f81ee22b5d79d750f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e9e8a7369d6622f81ee22b5d79d750f">&#9670;&#160;</a></span>imprime1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int imprime1 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td>
+          <td class="paramname"><em>matriz1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00033">33</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>                                                         {</div>
+<div class="line"><span class="lineno">   34</span>    <span class="comment">//imprime na tela a primeira matriz</span></div>
+<div class="line"><span class="lineno">   35</span>    printf(<span class="stringliteral">&quot;Operando: A=\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i &lt;linhas; i++){</div>
+<div class="line"><span class="lineno">   37</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">   38</span>            printf(<span class="stringliteral">&quot;| %d %di |&quot;</span>, matriz1[i][j].real, matriz1[i][j].imag);</div>
+<div class="line"><span class="lineno">   39</span>        }</div>
+<div class="line"><span class="lineno">   40</span>    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   41</span>    }</div>
+<div class="line"><span class="lineno">   42</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   43</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4a3312ef51d55483d7ed76ec147a66ba" name="a4a3312ef51d55483d7ed76ec147a66ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a3312ef51d55483d7ed76ec147a66ba">&#9670;&#160;</a></span>imprime2()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int imprime2 </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td>
+          <td class="paramname"><em>matriz1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td>
+          <td class="paramname"><em>matriz2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00047">47</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>                                                                             {</div>
+<div class="line"><span class="lineno">   48</span>    <span class="comment">//imprime na tela a primeira matriz</span></div>
+<div class="line"><span class="lineno">   49</span>    printf(<span class="stringliteral">&quot;Operando: A=\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i &lt;linhas; i++){</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">   52</span>            printf(<span class="stringliteral">&quot;| %d %di |&quot;</span>, matriz1[i][j].real, matriz1[i][j].imag);</div>
+<div class="line"><span class="lineno">   53</span>        }</div>
+<div class="line"><span class="lineno">   54</span>    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   55</span>    }</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span> </div>
+<div class="line"><span class="lineno">   58</span>    <span class="comment">//imprime na tela a segunda matriz</span></div>
+<div class="line"><span class="lineno">   59</span>    printf(<span class="stringliteral">&quot;\nOperando: B=\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i &lt;linhas; i++){</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">   62</span>            printf(<span class="stringliteral">&quot;| %d %di |&quot;</span>, matriz2[i][j].real, matriz2[i][j].imag);</div>
+<div class="line"><span class="lineno">   63</span>        }</div>
+<div class="line"><span class="lineno">   64</span>    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
+<div class="line"><span class="lineno">   66</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   67</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae555b84bdcf98cce93078acdc02bd81f" name="ae555b84bdcf98cce93078acdc02bd81f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae555b84bdcf98cce93078acdc02bd81f">&#9670;&#160;</a></span>imprimRes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int imprimRes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structComplexo.html">Complexo</a> **&#160;</td>
+          <td class="paramname"><em>resultado</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00071">71</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   71</span>                                                          {</div>
+<div class="line"><span class="lineno">   72</span>    <span class="comment">//imprime na tela o resultado da operação</span></div>
+<div class="line"><span class="lineno">   73</span>    printf(<span class="stringliteral">&quot;\nResultado : R=\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i &lt;linhas; i++){</div>
+<div class="line"><span class="lineno">   75</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">   76</span>            printf(<span class="stringliteral">&quot;| %d %di |&quot;</span>, resultado[i][j].real, resultado[i][j].imag);</div>
+<div class="line"><span class="lineno">   77</span>        }</div>
+<div class="line"><span class="lineno">   78</span>    printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
+<div class="line"><span class="lineno">   79</span>    }</div>
+<div class="line"><span class="lineno">   80</span>            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4801e8768419be3971d4c1b9037e14cc" name="a4801e8768419be3971d4c1b9037e14cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4801e8768419be3971d4c1b9037e14cc">&#9670;&#160;</a></span>prodEscMatriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structComplexo.html">Complexo</a> ** prodEscMatriz </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00245">245</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  245</span>                                                {</div>
+<div class="line"><span class="lineno">  246</span>    <span class="comment">//aloca as matrizes matrizprod1, matrizprod2 (matrizes de entrada) e resultado (matriz resultante)</span></div>
+<div class="line"><span class="lineno">  247</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matriz1 = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  248</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matriz2 = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  249</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **resultado = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  250</span>    <span class="comment">//gera numeros aleatorios  para as matrizes matrizprod1 e matrizprod2</span></div>
+<div class="line"><span class="lineno">  251</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matriz1, linhas, colunas);</div>
+<div class="line"><span class="lineno">  252</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matriz2, linhas, colunas);</div>
+<div class="line"><span class="lineno">  253</span> </div>
+<div class="line"><span class="lineno">  254</span>    <span class="comment">// realiza a operação do produto escalar</span></div>
+<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; linhas; i++) {</div>
+<div class="line"><span class="lineno">  256</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt; colunas; j++){</div>
+<div class="line"><span class="lineno">  257</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a> = matriz1[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a> * matriz2[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a> - matriz1[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a> * matriz2[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>;</div>
+<div class="line"><span class="lineno">  258</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a> = matriz1[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a> * matriz2[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a> - matriz1[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a> * matriz2[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>;</div>
+<div class="line"><span class="lineno">  259</span>        }</div>
+<div class="line"><span class="lineno">  260</span>    }</div>
+<div class="line"><span class="lineno">  261</span> </div>
+<div class="line"><span class="lineno">  262</span> </div>
+<div class="line"><span class="lineno">  263</span>    <span class="comment">// imprime as matrizes matrizprod1, matrizprod2 e o resultado da operação</span></div>
+<div class="line"><span class="lineno">  264</span>    printf(<span class="stringliteral">&quot;\n======Teste da operacao produto escalar======\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  265</span>    <a class="code hl_function" href="matrizes_8c.html#a4a3312ef51d55483d7ed76ec147a66ba">imprime2</a>(matriz1, matriz2, linhas, colunas);</div>
+<div class="line"><span class="lineno">  266</span>    <a class="code hl_function" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes</a>(resultado, linhas, colunas);</div>
+<div class="line"><span class="lineno">  267</span> </div>
+<div class="line"><span class="lineno">  268</span>    <span class="comment">// retorna o resultado da operação</span></div>
+<div class="line"><span class="lineno">  269</span>    <span class="keywordflow">return</span> resultado;</div>
+<div class="line"><span class="lineno">  270</span>}</div>
+<div class="ttc" id="amatrizes_8c_html_a4a3312ef51d55483d7ed76ec147a66ba"><div class="ttname"><a href="matrizes_8c.html#a4a3312ef51d55483d7ed76ec147a66ba">imprime2</a></div><div class="ttdeci">int imprime2(Complexo **matriz1, Complexo **matriz2, int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00047">matrizes.c:47</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Referências <a class="el" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz()</a>, <a class="el" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum()</a>, <a class="el" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">Complexo::imag</a>, <a class="el" href="matrizes_8c.html#a4a3312ef51d55483d7ed76ec147a66ba">imprime2()</a>, <a class="el" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes()</a> e <a class="el" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">Complexo::real</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="src_2matrizes_2matrizes_8c_a4801e8768419be3971d4c1b9037e14cc_cgraph.png" border="0" usemap="#asrc_2matrizes_2matrizes_8c_a4801e8768419be3971d4c1b9037e14cc_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a318bb2ecc463d5374912da8625068da5" name="a318bb2ecc463d5374912da8625068da5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a318bb2ecc463d5374912da8625068da5">&#9670;&#160;</a></span>prodMatMatriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structComplexo.html">Complexo</a> ** prodMatMatriz </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00274">274</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  274</span>                                                 {</div>
+<div class="line"><span class="lineno">  275</span>    <span class="comment">//aloca matrizes matrizmat1, matrizmat2 (matrizes de entrada), resultado (matriz resultante) e cont (matriz auxiliar para cálculos intermediários)</span></div>
+<div class="line"><span class="lineno">  276</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matrizmat1 = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  277</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matrizmat2 = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  278</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **cont = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  279</span>    <span class="keywordtype">int</span> k;</div>
+<div class="line"><span class="lineno">  280</span>    <span class="comment">//gera numeors aleatorios  para as matrizes matrizmat1 e matrizmat2</span></div>
+<div class="line"><span class="lineno">  281</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matrizmat1, linhas, colunas);</div>
+<div class="line"><span class="lineno">  282</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matrizmat2, linhas, colunas);</div>
+<div class="line"><span class="lineno">  283</span> </div>
+<div class="line"><span class="lineno">  284</span>    <span class="comment">//realiza a operação de produto matricial</span></div>
+<div class="line"><span class="lineno">  285</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;linhas; i++){</div>
+<div class="line"><span class="lineno">  286</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">  287</span>            <span class="keywordflow">for</span>(k=0; k&lt;colunas; k++){</div>
+<div class="line"><span class="lineno">  288</span>                cont[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a> += matrizmat1[i][k].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a> * matrizmat2[k][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>;</div>
+<div class="line"><span class="lineno">  289</span>                cont[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a> += matrizmat1[i][k].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a> * matrizmat2[k][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>;</div>
+<div class="line"><span class="lineno">  290</span>            }</div>
+<div class="line"><span class="lineno">  291</span>        }</div>
+<div class="line"><span class="lineno">  292</span>    }</div>
+<div class="line"><span class="lineno">  293</span> </div>
+<div class="line"><span class="lineno">  294</span> </div>
+<div class="line"><span class="lineno">  295</span>    <span class="comment">// imprime as matrizes matrizmat1, matrizmat2 e o resultado da operação</span></div>
+<div class="line"><span class="lineno">  296</span>    printf(<span class="stringliteral">&quot;\n======Teste da operacao produto matricial======\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  297</span>    <a class="code hl_function" href="matrizes_8c.html#a4a3312ef51d55483d7ed76ec147a66ba">imprime2</a>(matrizmat1, matrizmat2, linhas, colunas);</div>
+<div class="line"><span class="lineno">  298</span>    <a class="code hl_function" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes</a>(cont, linhas, colunas);</div>
+<div class="line"><span class="lineno">  299</span> </div>
+<div class="line"><span class="lineno">  300</span>    <span class="comment">// retorna o cont(resultado) da operação</span></div>
+<div class="line"><span class="lineno">  301</span>    <span class="keywordflow">return</span> cont;</div>
+<div class="line"><span class="lineno">  302</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referências <a class="el" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz()</a>, <a class="el" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum()</a>, <a class="el" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">Complexo::imag</a>, <a class="el" href="matrizes_8c.html#a4a3312ef51d55483d7ed76ec147a66ba">imprime2()</a>, <a class="el" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes()</a> e <a class="el" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">Complexo::real</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="src_2matrizes_2matrizes_8c_a318bb2ecc463d5374912da8625068da5_cgraph.png" border="0" usemap="#asrc_2matrizes_2matrizes_8c_a318bb2ecc463d5374912da8625068da5_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a1eaa392087c545f0d2e0287feaac4798" name="a1eaa392087c545f0d2e0287feaac4798"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eaa392087c545f0d2e0287feaac4798">&#9670;&#160;</a></span>somaMatriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structComplexo.html">Complexo</a> ** somaMatriz </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00086">86</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>                                              {</div>
+<div class="line"><span class="lineno">   87</span>    <span class="comment">// somaMatriz recebe como parametro tipos inteiros linha e colunas</span></div>
+<div class="line"><span class="lineno">   88</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matriz1 = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">   89</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matriz2 = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">   90</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **resultado = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas,colunas);</div>
+<div class="line"><span class="lineno">   91</span>    <span class="comment">//gera numeros aleatorios para a matriz</span></div>
+<div class="line"><span class="lineno">   92</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matriz1, linhas, colunas);</div>
+<div class="line"><span class="lineno">   93</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matriz2, linhas, colunas);</div>
+<div class="line"><span class="lineno">   94</span> </div>
+<div class="line"><span class="lineno">   95</span>    <span class="comment">//operação soma</span></div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;linhas; i++){</div>
+<div class="line"><span class="lineno">   97</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">   98</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>= matriz1[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a> + matriz2[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>;</div>
+<div class="line"><span class="lineno">   99</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>= matriz1[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a> + matriz2[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>;</div>
+<div class="line"><span class="lineno">  100</span>        }</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    printf(<span class="stringliteral">&quot;\n======Teste da operacao soma======\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  104</span>    <a class="code hl_function" href="matrizes_8c.html#a4a3312ef51d55483d7ed76ec147a66ba">imprime2</a>(matriz1, matriz2, linhas, colunas);</div>
+<div class="line"><span class="lineno">  105</span>    <a class="code hl_function" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes</a>(resultado, linhas, colunas);</div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">return</span> resultado;</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referências <a class="el" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz()</a>, <a class="el" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum()</a>, <a class="el" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">Complexo::imag</a>, <a class="el" href="matrizes_8c.html#a4a3312ef51d55483d7ed76ec147a66ba">imprime2()</a>, <a class="el" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes()</a> e <a class="el" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">Complexo::real</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="src_2matrizes_2matrizes_8c_a1eaa392087c545f0d2e0287feaac4798_cgraph.png" border="0" usemap="#asrc_2matrizes_2matrizes_8c_a1eaa392087c545f0d2e0287feaac4798_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a084a5f0693f338554ce826aa5a2dd30a" name="a084a5f0693f338554ce826aa5a2dd30a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a084a5f0693f338554ce826aa5a2dd30a">&#9670;&#160;</a></span>subtraMatriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structComplexo.html">Complexo</a> ** subtraMatriz </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00115">115</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>                                                {</div>
+<div class="line"><span class="lineno">  116</span>    <span class="comment">//aloca na memoria as matrizes subtração e resultado</span></div>
+<div class="line"><span class="lineno">  117</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matrizA = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  118</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matrizB = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  119</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **resultado = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas,colunas);</div>
+<div class="line"><span class="lineno">  120</span>    <span class="comment">//gera numeros aleatorios</span></div>
+<div class="line"><span class="lineno">  121</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matrizA, linhas, colunas);</div>
+<div class="line"><span class="lineno">  122</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matrizB, linhas, colunas);</div>
+<div class="line"><span class="lineno">  123</span> </div>
+<div class="line"><span class="lineno">  124</span>    <span class="comment">// operação subtração</span></div>
+<div class="line"><span class="lineno">  125</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;linhas; i++){</div>
+<div class="line"><span class="lineno">  126</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">  127</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a> = matrizA[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a> - matrizB[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>;</div>
+<div class="line"><span class="lineno">  128</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a> = matrizA[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a> - matrizB[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>;</div>
+<div class="line"><span class="lineno">  129</span>        }</div>
+<div class="line"><span class="lineno">  130</span>    }</div>
+<div class="line"><span class="lineno">  131</span>    <span class="comment">//</span></div>
+<div class="line"><span class="lineno">  132</span> </div>
+<div class="line"><span class="lineno">  133</span>    printf(<span class="stringliteral">&quot;\n======Teste da operacao subtracao======\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  134</span>    <a class="code hl_function" href="matrizes_8c.html#a4a3312ef51d55483d7ed76ec147a66ba">imprime2</a>(matrizA, matrizB, linhas, colunas);</div>
+<div class="line"><span class="lineno">  135</span>    <a class="code hl_function" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes</a>(resultado, linhas, colunas);</div>
+<div class="line"><span class="lineno">  136</span> </div>
+<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">return</span> resultado;</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referências <a class="el" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz()</a>, <a class="el" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum()</a>, <a class="el" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">Complexo::imag</a>, <a class="el" href="matrizes_8c.html#a4a3312ef51d55483d7ed76ec147a66ba">imprime2()</a>, <a class="el" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes()</a> e <a class="el" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">Complexo::real</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="src_2matrizes_2matrizes_8c_a084a5f0693f338554ce826aa5a2dd30a_cgraph.png" border="0" usemap="#asrc_2matrizes_2matrizes_8c_a084a5f0693f338554ce826aa5a2dd30a_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="ae220ed44122cad3aa4637358f423bb93" name="ae220ed44122cad3aa4637358f423bb93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae220ed44122cad3aa4637358f423bb93">&#9670;&#160;</a></span>teste_calc_svd()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void teste_calc_svd </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00365">365</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  365</span>                     {</div>
+<div class="line"><span class="lineno">  366</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matrizR;</div>
+<div class="line"><span class="lineno">  367</span>    <span class="keywordtype">int</span> linhas[4] = {3, 4, 6, 6};</div>
+<div class="line"><span class="lineno">  368</span>    <span class="keywordtype">int</span> colunas[4] = {2, 4, 5 , 5}; </div>
+<div class="line"><span class="lineno">  369</span>    <span class="keywordtype">int</span> i, j, t;</div>
+<div class="line"><span class="lineno">  370</span> </div>
+<div class="line"><span class="lineno">  371</span>    printf(<span class="stringliteral">&quot;\n======Teste da operacao SVD======\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  372</span> </div>
+<div class="line"><span class="lineno">  373</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matrizC = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(3, 3);</div>
+<div class="line"><span class="lineno">  374</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matrizC, 3, 3);</div>
+<div class="line"><span class="lineno">  375</span>    <a class="code hl_function" href="matrizes_8c.html#a1ea2aeb1f01cc416a62ca9f22ed8ba74">calc_svd</a>(matrizC, 3, 3);</div>
+<div class="line"><span class="lineno">  376</span> </div>
+<div class="line"><span class="lineno">  377</span> </div>
+<div class="line"><span class="lineno">  378</span>    <span class="keywordflow">for</span>(t=0; t&lt;4; t++){</div>
+<div class="line"><span class="lineno">  379</span>        linhas[t];</div>
+<div class="line"><span class="lineno">  380</span>        colunas[t];</div>
+<div class="line"><span class="lineno">  381</span> </div>
+<div class="line"><span class="lineno">  382</span>    matrizR = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas[t], colunas[t]);</div>
+<div class="line"><span class="lineno">  383</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i &lt;linhas[t]; i++){</div>
+<div class="line"><span class="lineno">  384</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas[t]; j++){</div>
+<div class="line"><span class="lineno">  385</span>            matrizR[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a> = rand() % 10; <span class="comment">// Atribui um valor aleatorio entre 0 e 9 para a parte real</span></div>
+<div class="line"><span class="lineno">  386</span>            matrizR[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a> = 0;</div>
+<div class="line"><span class="lineno">  387</span>        }</div>
+<div class="line"><span class="lineno">  388</span>    }</div>
+<div class="line"><span class="lineno">  389</span>    </div>
+<div class="line"><span class="lineno">  390</span>    <a class="code hl_function" href="matrizes_8c.html#a1ea2aeb1f01cc416a62ca9f22ed8ba74">calc_svd</a>(matrizR, linhas[t], colunas[t]);</div>
+<div class="line"><span class="lineno">  391</span> </div>
+<div class="line"><span class="lineno">  392</span>    }</div>
+<div class="line"><span class="lineno">  393</span> </div>
+<div class="line"><span class="lineno">  394</span> </div>
+<div class="line"><span class="lineno">  395</span>}</div>
+<div class="ttc" id="amatrizes_8c_html_a1ea2aeb1f01cc416a62ca9f22ed8ba74"><div class="ttname"><a href="matrizes_8c.html#a1ea2aeb1f01cc416a62ca9f22ed8ba74">calc_svd</a></div><div class="ttdeci">void calc_svd(Complexo **matriz, int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00304">matrizes.c:304</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Referências <a class="el" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz()</a>, <a class="el" href="matrizes_8c.html#a1ea2aeb1f01cc416a62ca9f22ed8ba74">calc_svd()</a>, <a class="el" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum()</a>, <a class="el" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">Complexo::imag</a> e <a class="el" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">Complexo::real</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="src_2matrizes_2matrizes_8c_ae220ed44122cad3aa4637358f423bb93_cgraph.png" border="0" usemap="#asrc_2matrizes_2matrizes_8c_ae220ed44122cad3aa4637358f423bb93_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a3715ef11e552343d910a10a499c10982" name="a3715ef11e552343d910a10a499c10982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3715ef11e552343d910a10a499c10982">&#9670;&#160;</a></span>todosMatriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void todosMatriz </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00400">400</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  400</span>                  {</div>
+<div class="line"><span class="lineno">  401</span>     <span class="comment">// Chamando as funções de teste para cada operação</span></div>
+<div class="line"><span class="lineno">  402</span>    <a class="code hl_function" href="matrizes_8c.html#a1eaa392087c545f0d2e0287feaac4798">somaMatriz</a>(3, 3);</div>
+<div class="line"><span class="lineno">  403</span>    <a class="code hl_function" href="matrizes_8c.html#a084a5f0693f338554ce826aa5a2dd30a">subtraMatriz</a>(3, 3);</div>
+<div class="line"><span class="lineno">  404</span>    <a class="code hl_function" href="matrizes_8c.html#a834ad3f00029aeeb766351601f6aea7c">transpostaMatriz</a>(3, 3);</div>
+<div class="line"><span class="lineno">  405</span>    <a class="code hl_function" href="matrizes_8c.html#abbe9e9a28a7a9badf1dfbe3e45106079">conjugMatriz</a>(3, 3);</div>
+<div class="line"><span class="lineno">  406</span>    <a class="code hl_function" href="matrizes_8c.html#a429157a7c2328638fa85930f74e97005">hermitMatriz</a>(3, 3);</div>
+<div class="line"><span class="lineno">  407</span>    <a class="code hl_function" href="matrizes_8c.html#a4801e8768419be3971d4c1b9037e14cc">prodEscMatriz</a>(3, 3);</div>
+<div class="line"><span class="lineno">  408</span>    <a class="code hl_function" href="matrizes_8c.html#a318bb2ecc463d5374912da8625068da5">prodMatMatriz</a>(3, 3);</div>
+<div class="line"><span class="lineno">  409</span>    <a class="code hl_function" href="matrizes_8c.html#ae220ed44122cad3aa4637358f423bb93">teste_calc_svd</a>();</div>
+<div class="line"><span class="lineno">  410</span> </div>
+<div class="line"><span class="lineno">  411</span>    </div>
+<div class="line"><span class="lineno">  412</span>}</div>
+<div class="ttc" id="amatrizes_8c_html_a084a5f0693f338554ce826aa5a2dd30a"><div class="ttname"><a href="matrizes_8c.html#a084a5f0693f338554ce826aa5a2dd30a">subtraMatriz</a></div><div class="ttdeci">Complexo ** subtraMatriz(int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00115">matrizes.c:115</a></div></div>
+<div class="ttc" id="amatrizes_8c_html_a1eaa392087c545f0d2e0287feaac4798"><div class="ttname"><a href="matrizes_8c.html#a1eaa392087c545f0d2e0287feaac4798">somaMatriz</a></div><div class="ttdeci">Complexo ** somaMatriz(int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00086">matrizes.c:86</a></div></div>
+<div class="ttc" id="amatrizes_8c_html_a318bb2ecc463d5374912da8625068da5"><div class="ttname"><a href="matrizes_8c.html#a318bb2ecc463d5374912da8625068da5">prodMatMatriz</a></div><div class="ttdeci">Complexo ** prodMatMatriz(int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00274">matrizes.c:274</a></div></div>
+<div class="ttc" id="amatrizes_8c_html_a429157a7c2328638fa85930f74e97005"><div class="ttname"><a href="matrizes_8c.html#a429157a7c2328638fa85930f74e97005">hermitMatriz</a></div><div class="ttdeci">Complexo ** hermitMatriz(int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00195">matrizes.c:195</a></div></div>
+<div class="ttc" id="amatrizes_8c_html_a4801e8768419be3971d4c1b9037e14cc"><div class="ttname"><a href="matrizes_8c.html#a4801e8768419be3971d4c1b9037e14cc">prodEscMatriz</a></div><div class="ttdeci">Complexo ** prodEscMatriz(int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00245">matrizes.c:245</a></div></div>
+<div class="ttc" id="amatrizes_8c_html_a834ad3f00029aeeb766351601f6aea7c"><div class="ttname"><a href="matrizes_8c.html#a834ad3f00029aeeb766351601f6aea7c">transpostaMatriz</a></div><div class="ttdeci">Complexo ** transpostaMatriz(int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00142">matrizes.c:142</a></div></div>
+<div class="ttc" id="amatrizes_8c_html_abbe9e9a28a7a9badf1dfbe3e45106079"><div class="ttname"><a href="matrizes_8c.html#abbe9e9a28a7a9badf1dfbe3e45106079">conjugMatriz</a></div><div class="ttdeci">Complexo ** conjugMatriz(int linhas, int colunas)</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00169">matrizes.c:169</a></div></div>
+<div class="ttc" id="amatrizes_8c_html_ae220ed44122cad3aa4637358f423bb93"><div class="ttname"><a href="matrizes_8c.html#ae220ed44122cad3aa4637358f423bb93">teste_calc_svd</a></div><div class="ttdeci">void teste_calc_svd()</div><div class="ttdef"><b>Definição</b> <a href="matrizes_8c_source.html#l00365">matrizes.c:365</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Referências <a class="el" href="matrizes_8c.html#abbe9e9a28a7a9badf1dfbe3e45106079">conjugMatriz()</a>, <a class="el" href="matrizes_8c.html#a429157a7c2328638fa85930f74e97005">hermitMatriz()</a>, <a class="el" href="matrizes_8c.html#a4801e8768419be3971d4c1b9037e14cc">prodEscMatriz()</a>, <a class="el" href="matrizes_8c.html#a318bb2ecc463d5374912da8625068da5">prodMatMatriz()</a>, <a class="el" href="matrizes_8c.html#a1eaa392087c545f0d2e0287feaac4798">somaMatriz()</a>, <a class="el" href="matrizes_8c.html#a084a5f0693f338554ce826aa5a2dd30a">subtraMatriz()</a>, <a class="el" href="matrizes_8c.html#ae220ed44122cad3aa4637358f423bb93">teste_calc_svd()</a> e <a class="el" href="matrizes_8c.html#a834ad3f00029aeeb766351601f6aea7c">transpostaMatriz()</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="src_2matrizes_2matrizes_8c_a3715ef11e552343d910a10a499c10982_cgraph.png" border="0" usemap="#asrc_2matrizes_2matrizes_8c_a3715ef11e552343d910a10a499c10982_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+<a id="a834ad3f00029aeeb766351601f6aea7c" name="a834ad3f00029aeeb766351601f6aea7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a834ad3f00029aeeb766351601f6aea7c">&#9670;&#160;</a></span>transpostaMatriz()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structComplexo.html">Complexo</a> ** transpostaMatriz </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>linhas</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>colunas</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definido na linha <a class="el" href="src_2matrizes_2matrizes_8c_source.html#l00142">142</a> do ficheiro <a class="el" href="src_2matrizes_2matrizes_8c_source.html">matrizes.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  142</span>                                                    {</div>
+<div class="line"><span class="lineno">  143</span>    <span class="comment">// aloca na memória a matriz transposta e o resultado</span></div>
+<div class="line"><span class="lineno">  144</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **matriztrans = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  145</span>    <a class="code hl_struct" href="structComplexo.html">Complexo</a> **resultado = <a class="code hl_function" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz</a>(linhas, colunas);</div>
+<div class="line"><span class="lineno">  146</span>    <span class="comment">//gera numero aleatorio para a matriz transposta</span></div>
+<div class="line"><span class="lineno">  147</span>    <a class="code hl_function" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum</a>(matriztrans, linhas, colunas);</div>
+<div class="line"><span class="lineno">  148</span> </div>
+<div class="line"><span class="lineno">  149</span>    <span class="comment">// realiza a operação da matriz transposta</span></div>
+<div class="line"><span class="lineno">  150</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;linhas; i++){</div>
+<div class="line"><span class="lineno">  151</span>        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j=0; j&lt;colunas; j++){</div>
+<div class="line"><span class="lineno">  152</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>= matriztrans[j][i].<a class="code hl_variable" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">real</a>;</div>
+<div class="line"><span class="lineno">  153</span>            resultado[i][j].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>= matriztrans[j][i].<a class="code hl_variable" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">imag</a>;</div>
+<div class="line"><span class="lineno">  154</span>        }</div>
+<div class="line"><span class="lineno">  155</span>    }</div>
+<div class="line"><span class="lineno">  156</span>    <span class="comment">// Imprime a matriz transposta e o resultado da operação</span></div>
+<div class="line"><span class="lineno">  157</span> </div>
+<div class="line"><span class="lineno">  158</span>    printf(<span class="stringliteral">&quot;\n======Teste da operacao transposta======\n&quot;</span>);</div>
+<div class="line"><span class="lineno">  159</span>    <a class="code hl_function" href="matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1</a>(matriztrans, linhas, colunas);</div>
+<div class="line"><span class="lineno">  160</span>    <a class="code hl_function" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes</a>(resultado, linhas, colunas);</div>
+<div class="line"><span class="lineno">  161</span> </div>
+<div class="line"><span class="lineno">  162</span>   <span class="comment">//retorna o resultado da operação</span></div>
+<div class="line"><span class="lineno">  163</span>    <span class="keywordflow">return</span> resultado;</div>
+<div class="line"><span class="lineno">  164</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Referências <a class="el" href="matrizes_8c.html#a7d042a66e70fa29560c9debf9d8ef24c">aloca_matriz()</a>, <a class="el" href="matrizes_8c.html#a6a715704d5368128e5cf5f07c33bbc6a">geraNum()</a>, <a class="el" href="structComplexo.html#aed60059128ed4b6eb2b1e181a43459f1">Complexo::imag</a>, <a class="el" href="matrizes_8c.html#a2e9e8a7369d6622f81ee22b5d79d750f">imprime1()</a>, <a class="el" href="matrizes_8c.html#ae555b84bdcf98cce93078acdc02bd81f">imprimRes()</a> e <a class="el" href="structComplexo.html#a192d2ceb915564a5e2a6e3bff72c76d1">Complexo::real</a>.</p>
+<div class="dynheader">
+Grafo de chamadas desta função:</div>
+<div class="dyncontent">
+<div class="center"><img src="src_2matrizes_2matrizes_8c_a834ad3f00029aeeb766351601f6aea7c_cgraph.png" border="0" usemap="#asrc_2matrizes_2matrizes_8c_a834ad3f00029aeeb766351601f6aea7c_cgraph" alt=""/></div>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.7
+</small></address>
+</body>
+</html>
